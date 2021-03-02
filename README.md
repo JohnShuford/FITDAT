@@ -42,36 +42,34 @@ This is the start of the most comprehensive and wide reaching fitness database e
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+I scraped all of the performance data from the concept 2 website. I then cleaned and normalized all of that data moved it into an SQL database then visualized everything in Tableau.
 
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [Python](https://docs.python.org/3/)
+* [Pandas](https://pandas.pydata.org/docs/)
+* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+* [Numpy](https://numpy.org/doc/)
+* [Matplotlib](https://matplotlib.org/stable/contents.html)
+* [Tableau](https://www.tableau.com/)
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+This is a list of all of the packages that you need to have installed in your virtual environment for the project to run.
+* pandas
+* matplotlib
+* splinter
+* time
+* bs4
+* webdriver_manager
   ```sh
   npm install npm@latest -g
   ```
@@ -97,10 +95,84 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Here is an example of what I did when I used Beautiful Soup to scrape all of the data from the Concept 2 Website!
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```sh
+#The loop to scrape the C2 data
+for x in (season):
+    #creating the season variable for the scrape
+    currenet_season = x
+    
+    #getting the first page of the season
+    initial_url = f'{url}/{currenet_season}/rower/2000'
+    
+    #getting splinter to visit the site and create a soup element to parse
+    browser.visit(initial_url)
+    html = browser.html
+    soup = bs(html, 'lxml')
+    
+    #finding the number of pages for for each season
+    page_numbers = int(soup.select("div > ul[class=pagination] > li")[11].text)
+    
+    #appending the first page to the dataframe
+    twoK2021 = twoK2021.append(pd.read_html(initial_url)[1], ignore_index = True)
+    
+    #print record to keep track of the process
+    print(f'{page_numbers} pages in {currenet_season}')
+    print(f'starting to progess {currenet_season}')
+    
+    #the loop for the later pages
+    for x in range (2, page_numbers + 1):
+        #creating the search url for the later pages
+        search_url = f'{url}/{currenet_season}/rower/2000?page={x}'
+        
+        #appending the pages to the dataframe
+        twoK2021 = twoK2021.append(pd.read_html(search_url)[1], ignore_index = True)
+        
+        #printing record to keep track
+        print(f'processing {currenet_season}, {x} of {page_numbers}')
 
+#exit out of the browser
+browser.quit()
+```
+For more information about the power of beautiful soup follow this link! https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+Here is an example of a function that I wrote that I used when I iterated through the dataframes to clean them with Pandas
+
+```sh
+#the function to clean the for time tests
+def clean_forTime (df, distance, testname):
+    #adding a column with the test name
+    df['Test'] = testname
+    
+    #drop any rows that don't have a value in time
+    df = df.dropna(subset=['Time'])
+    
+    #apply the mintocec function to the time column
+    df['Seconds'] = df['Time'].apply(mintosec)
+    
+    #find the split time with the C2 formula
+    df['Split'] = df['Seconds'].apply(lambda x: round(500*(x/distance), 2))
+    
+    #find the watts with the C2 formula
+    df['Watts'] = df['Split'].apply(lambda x: round(2.8/(x/500)**3,2))
+    
+    #sort the dataframe by watts, highest value at the top
+    df.sort_values(by = ['Watts'], ascending=False)
+    
+    #drop any unnecessary columns
+    df = df.drop(columns=['Unnamed: 0', 'Pos.', 'Type'])
+    
+    #drop all of the rows that do not have a verified distance
+    df = df[df['Verified'] != 'No']
+    
+    #send the dataframe to CSV with out an index
+    df.to_csv(f'../CSVs/cleaned/{testname}.csv', index = False)
+    
+    #return the dataframe
+    return df
+ ```
+ For more information on the power of pandas follow this link! https://pandas.pydata.org/docs/
 
 <!-- CONTACT -->
 ## Contact
