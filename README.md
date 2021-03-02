@@ -5,9 +5,7 @@ This is the start of the most comprehensive and wide reaching fitness database e
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/realFIT_logo.png" alt="Logo" width="80" height="80">
-  </a>
+  ![logo](./Images/realFIT_logo.png)
 </p>
 
 
