@@ -4,9 +4,8 @@ This is the start of the most comprehensive and wide reaching fitness database e
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
+
   ![logo](./Images/realFIT_logo.png)
-</p>
 
 
 
