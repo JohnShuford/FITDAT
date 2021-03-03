@@ -27,9 +27,6 @@ This is the start of the most comprehensive and wide reaching fitness database e
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
@@ -47,12 +44,11 @@ I scraped all of the performance data from the concept 2 website. I then cleaned
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Python](https://docs.python.org/3/)
 * [Pandas](https://pandas.pydata.org/docs/)
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-* [Numpy](https://numpy.org/doc/)
 * [Matplotlib](https://matplotlib.org/stable/contents.html)
 * [Tableau](https://www.tableau.com/)
+* [PostgreSQL](https://www.postgresql.org/)
 
 
 
