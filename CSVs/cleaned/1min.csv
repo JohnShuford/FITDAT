@@ -1,4 +1,4 @@
-Name,Age,Location,Country,Club/Affiliation,Distance,Verified,Season,Test,Split,Watts,TestID
+Name,Age,Location,Country,ClubAffiliation,Distance,Verified,Season,Test,Split,Watts,TestID
 Phil Clapp,29,,GBR,,431,Yes,2020,1min,69.61,1037.66,1min8161
 Loren Howard,34,,USA,,429,Yes,2018,1min,69.93,1023.48,1min3421
 Phil Clapp,28,,GBR,,428,Yes,2019,1min,70.09,1016.48,1min5618

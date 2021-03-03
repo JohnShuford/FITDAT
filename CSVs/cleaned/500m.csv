@@ -1,4 +1,4 @@
-Name,Age,Location,Country,Club/Affiliation,Time,Verified,Season,Test,Seconds,Split,Watts,TestID
+Name,Age,Location,Country,ClubAffiliation,Time,Verified,Season,Test,Seconds,Split,Watts,TestID
 John Stenard,43,"St. Petersburg, FL",USA,Massachusetts Institute of Technology,1:19.1,Race,2002,500m,79.1,79.1,707.19,500m3
 Jim Hughes,29,"Shrewsbury, MA",USA,,1:21.1,Race,2002,500m,81.1,81.1,656.15,500m18
 Dominick Caste,40,"Orlando, FL",USA,,1:25.8,Race,2002,500m,85.8,85.8,554.12,500m101

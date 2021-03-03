@@ -1,4 +1,4 @@
-Name,Age,Location,Country,Club/Affiliation,Time,Verified,Season,Test,Seconds,Split,Watts,TestID
+Name,Age,Location,Country,ClubAffiliation,Time,Verified,Season,Test,Seconds,Split,Watts,TestID
 Frédéric KOWAL,34,Nogent sur seine,FRA,,1:13:24.7,Yes,2006,21097m,4393.0,104.11,310.16,21097m4051
 Diego Rivieri,28,Casalmaggiore,ITA,"Prosport Trento, Italy",1:13:36.8,Race,2006,21097m,4393.0,104.11,310.16,21097m4052
 Dan Staite,32,Cambridge,GBR,,1:13:56.3,Yes,2006,21097m,4393.0,104.11,310.16,21097m4053

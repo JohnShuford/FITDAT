@@ -1,4 +1,4 @@
-Name,Age,Location,Country,Club/Affiliation,Distance,Verified,Season,Test,Split,Watts,TestID
+Name,Age,Location,Country,ClubAffiliation,Distance,Verified,Season,Test,Split,Watts,TestID
 Andy Ward,34,Leyland,GBR,,1457,Yes,2008,4min,82.36,626.5,4min4916
 Olli Zeidler,21,Munich,GER,MAD Team IRC,1445,Yes,2018,4min,83.04,611.23,4min19943
 Cameron Webster,25,,NZL,,1416,Yes,2020,4min,84.75,574.97,4min22872

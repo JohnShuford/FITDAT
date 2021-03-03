@@ -1,4 +1,4 @@
-Name,Age,Location,Country,Club/Affiliation,Time,Verified,Season,Test,Seconds,Split,Watts,TestID
+Name,Age,Location,Country,ClubAffiliation,Time,Verified,Season,Test,Seconds,Split,Watts,TestID
 Malcolm Fawcett,62,York,GBR,,22:37.3,Yes,2003,6000m,1357.3,113.11,241.86,6000m1957
 Christopher Collins,70,"Charlottesville, VA",USA,,22:48.1,Race,2003,6000m,1368.1,114.01,236.18,6000m2017
 Larry Eichelberger,58,"North Garden, VA",USA,,23:08.4,Race,2003,6000m,1388.4,115.7,225.98,6000m2136

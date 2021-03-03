@@ -1,4 +1,4 @@
-Name,Age,Location,Country,Club/Affiliation,Time,Verified,Season,Test,Seconds,Split,Watts,TestID
+Name,Age,Location,Country,ClubAffiliation,Time,Verified,Season,Test,Seconds,Split,Watts,TestID
 Ross Love,30,"Friendswood, TX",USA,,0:13.3,Yes,2016,100m,13.3,66.5,1190.15,100m0
 noel Carey,40,glanmire,IRL,,0:13.6,Yes,2016,100m,13.6,68.0,1113.12,100m1
 Mike Reilly,24,"Varsity House, NJ",USA,,0:13.7,Yes,2016,100m,13.7,68.5,1088.92,100m2

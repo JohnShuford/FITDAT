@@ -1,4 +1,4 @@
-Name,Age,Location,Country,Club/Affiliation,Distance,Verified,Season,Test,Split,Watts,TestID
+Name,Age,Location,Country,ClubAffiliation,Distance,Verified,Season,Test,Split,Watts,TestID
 Eric Murray,29,"Cambridge, New Zealand",NZL,,18728,Yes,2012,60min,96.11,394.24,60min25505
 Benjamin Reuter,30,Kiel,GER,,18283,Race,2018,60min,98.45,366.79,60min42306
 George Bridgewater,31,,NZL,,18259,Yes,2015,60min,98.58,365.34,60min34009
