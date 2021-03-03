@@ -37,7 +37,7 @@ This is the start of the most comprehensive and wide reaching fitness database e
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Tableau Screenshot](./Images/TableauScreenShot.png)
 
 I scraped all of the performance data from the concept 2 website. I then cleaned and normalized all of that data moved it into an SQL database then visualized everything in Tableau.
 
@@ -66,9 +66,7 @@ This is a list of all of the packages that you need to have installed in your vi
 * time
 * bs4
 * webdriver_manager
-  ```sh
-  npm install npm@latest -g
-  ```
+
 
 ### Installation
 
@@ -85,8 +83,6 @@ This is a list of all of the packages that you need to have installed in your vi
    ```JS
    const API_KEY = 'ENTER YOUR API';
    ```
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -182,10 +178,7 @@ Deployed: [https://johnshuford.github.io/Web-Design-Challenge/](https://johnshuf
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* This project was completed for and under the supervision of the Trilogy team opperating the Data Analytics Bootcamp through the University of Denver.
-* Shoutouts to Svitlana Malenfant (Instructor)
-
-
+* This project was for a project with realFIT, inc.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
