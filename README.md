@@ -86,6 +86,7 @@ This is a list of all of the packages that you need to have installed in your vi
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+### Beautiful Soup
 
 Here is an example of what I did when I used Beautiful Soup to scrape all of the data from the Concept 2 Website!
 
@@ -128,6 +129,8 @@ for x in (season):
 browser.quit()
 ```
 For more information about the power of beautiful soup follow this link! https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+### Pandas
 
 Here is an example of a function that I wrote that I used when I iterated through the dataframes to clean them with Pandas
 
