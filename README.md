@@ -39,8 +39,7 @@ This is the start of the most comprehensive and wide reaching fitness database e
 
 ![Tableau Screenshot](./Images/TableauScreenShot.png)
 
-I scraped all of the performance data from the concept 2 website. I then cleaned and normalized all of that data moved it into an SQL database then visualized everything in Tableau.
-
+I scraped all of the performance data from the concept 2 website. I then cleaned and normalized all of that data moved it into an SQL database then visualized everything in Tableau. Follow this [link](https://public.tableau.com/profile/john.shuford#!/vizhome/Concept2_Dashboard/ClubGrowthandPopularContries) to view and interact with the dashboard.
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
